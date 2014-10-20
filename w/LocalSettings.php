@@ -135,3 +135,20 @@ require_once "$IP/extensions/WikiEditor/WikiEditor.php";
 require_once( "$IP/skins/transparencyx/transparencyx.php" );
 require_once "$IP/extensions/MobileFrontend/MobileFrontend.php";
 $wgMFAutodetectMobileView = true;
+
+
+# Enable ConfirmEdit extension to use CAPTCHA
+# http://www.mediawiki.org/wiki/Extension:ConfirmEdit
+require_once( "$IP/extensions/ConfirmEdit/ConfirmEdit.php" );
+$wgCaptchaTriggers['edit'] = true; // Use CAPTCHA on every edit
+
+# Use QuestyCaptchas
+require_once("$IP/extensions/ConfirmEdit/QuestyCaptcha.php");
+$wgCaptchaClass = 'QuestyCaptcha';
+ 
+# Set questions for Questy
+# First a couple that can be answered with a linked to Google search
+$wgCaptchaQuestions[] = array (
+    'question' => "What is the first letter in the word 'transparency'?",
+    'answer' => "t"
+);
