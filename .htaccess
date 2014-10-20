@@ -1,0 +1,15 @@
+## http://www.mediawiki.org/wiki/Manual:Short_URL/Apache
+## http://shorturls.redwerks.org/
+
+# Enable the rewrite engine
+RewriteEngine On
+
+# Short url for wiki pages
+RewriteRule ^/?wiki(/.*)?$ %{DOCUMENT_ROOT}/w/index.php [L]
+
+# Redirect to Main Page on wiki
+# RewriteRule ^/?$ %{DOCUMENT_ROOT}/w/index.php [L]
+
+# Redirect home page to non-media wiki and /products to non-mediawiki products page
+RewriteRule ^/?$ index.html [L]
+RewriteRule ^/products/?$ /products/index.html [L]
