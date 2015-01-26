@@ -1,0 +1,151 @@
+/********
+ * #Base *
+ ********/
+
+	/**************************
+	 * Reset (Eric Meyer 2.0) *
+	 **************************/
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ul {
+			list-style: disc;
+		}
+		
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		
+		
+		/*****************************
+		* Transparency Exchange Base *
+		******************************/
+		html, input {
+			font-family: 'ProximaNova-Regular', 'Helvetica', 'Arial', sans-serif;
+		}
+		
+		strong {
+			font-weight: bold;
+		}
+		
+		@font-face {
+			font-family: "Hero";
+			src: url('Hero.otf');	
+		}
+		
+		@font-face {
+			font-family: "HeroLight";
+			src: url('HeroLight.otf');	
+		}
+		
+		@font-face {
+			font-family: "ProximaNova-Light";
+			src: url('ProximaNova/ProximaNova-Light.otf');	
+		}
+		
+		@font-face {
+			font-family: "ProximaNova-Bold";
+			src: url('ProximaNova/ProximaNova-Bold.otf');	
+		}
+		
+		@font-face {
+			font-family: "ProximaNova-Extrabold";
+			src: url('ProximaNova/ProximaNova-Extrabold.otf');	
+		}
+		
+		@font-face {
+			font-family: "ProximaNova-Regular";
+			src: url('ProximaNova/ProximaNova-Regular.otf');	
+		}
+		
+		@font-face {
+			font-family: "ProximaNova-Semibold";
+			src: url('ProximaNova/ProximaNova-Semibold.otf');	
+		}
+		
+		a, a:visited, a:active, a:hover {
+			text-decoration: none;
+		}
+			 
+  		 		  		
+/***********************
+ * #Layout	           *
+ ***********************/
+
+    th {
+/*      Table column headers padding, white background, and blue underline  */
+        background-color: transparent;
+        border-bottom: 1px solid #2293E1;
+        padding-top: .25em;
+        padding-bottom: .25em;
+        padding-left: .5em;
+    }
+
+    td {
+        padding-top: .25em;
+        padding-bottom: .25em;
+        padding-left: .5em;
+    }
+    
+
+    .members tbody tr td {
+/*      light blue background for first 1 or 2 columns*/
+        background-color: #ECF7FF;
+        
+        border-bottom: 2px solid white;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-right: 1em;
+    }
+    
+    .members tbody tr td:last-child {
+/*        no light blue background for last column*/
+        background-color: transparent;
+    }
+
+    .collapsibleAreaRegion {
+        margin-top: 4em;
+    }
+
+    .topicContent {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    
+
+        

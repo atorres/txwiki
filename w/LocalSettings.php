@@ -147,8 +147,15 @@ require_once("$IP/extensions/ConfirmEdit/QuestyCaptcha.php");
 $wgCaptchaClass = 'QuestyCaptcha';
  
 # Set questions for Questy
-# First a couple that can be answered with a linked to Google search
 $wgCaptchaQuestions[] = array (
-    'question' => "What is the first letter in the word 'transparency'?",
-    'answer' => "t"
+    'question' => "What is the third letter in the word 'transparency'?",
+    'answer' => "a"
 );
+
+# Temporary
+# Restrict editing by anyone except administrators
+$wgGroupPermissions['*']['edit'] = false;
+$wgGroupPermissions['user']['edit'] = false;
+$wgGroupPermissions['sysop']['edit'] = true;
+# Restrict account creation
+$wgGroupPermissions['*']['createaccount'] = false;
