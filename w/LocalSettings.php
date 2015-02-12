@@ -30,7 +30,7 @@ $wgArticlePath = "/wiki/$1";
 $wgUsePathInfo = true;
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "https://9972276.ngrok.com";
+$wgServer = "https://62ea183e.ngrok.com";
 
 ## The relative URL path to the skins directory
 $wgStylePath = "$wgScriptPath/skins";
@@ -44,8 +44,8 @@ $wgLogo = "$wgStylePath/common/images/wiki.png";
 $wgEnableEmail = true;
 $wgEnableUserEmail = true; # UPO
 
-$wgEmergencyContact = "apache@9972276.ngrok.com";
-$wgPasswordSender = "apache@9972276.ngrok.com";
+$wgEmergencyContact = "apache@62ea183e.ngrok.com";
+$wgPasswordSender = "apache@62ea183e.ngrok.com";
 
 $wgEnotifUserTalk = false; # UPO
 $wgEnotifWatchlist = false; # UPO
@@ -100,11 +100,11 @@ $wgShellLocale = "en_US.UTF-8";
 # Site language code, should be one of the list in ./languages/Names.php
 $wgLanguageCode = "en";
 
-$wgSecretKey = "51f964730091623eb8be071ae5d6beeb17ecb75be2a400a56e8cf6ee154f57c5";
+$wgSecretKey = "4f5db48fd161f327397933b7edfdc251374b629b74fa9af292e01720de940f98";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "10dbfbdb050aa6bb";
+$wgUpgradeKey = "d54bab98629a72e0";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'cologneblue', 'monobook', 'vector':
